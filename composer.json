@@ -1,0 +1,29 @@
+{
+    "name": "hamrahpay/hamrahpay",
+    "description": "Hamrahpay IPG/MPG Composer Library",
+    "license": "GPL-2.0-only",
+    "authors": [
+        {
+            "name": "Hamrahpay Team",
+            "email": "info@hamrahpay.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Hamrahpay\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hamrahpay\\laravel\\HamrahpayServiceProvider"
+            ],
+            "aliases": {
+                "Hamrahpay": "Hamrahpay\\laravel\\Facade\\Hamrahpay"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}

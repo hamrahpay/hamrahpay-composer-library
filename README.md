@@ -93,13 +93,13 @@ this library is also ready to using with laravel, it works with all versions of 
 then add this to `config/services.php` 
 ```php
 'hamrahpay' => [
-    'API_key' => 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
+    'API_Key' => 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
 ],
 ```
 Or create `config/Hamrahpay.php` and add this
 ```php
 return [
-    'API_key' => 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
+    'API_Key' => 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX',
 ];
 ```
 
@@ -121,7 +121,7 @@ echo $result['payment_token']; // save it for verification after payment
 
 // redirect to payment page
 if (!empty($result['status']) && $result['status']==1)
-    $hamrahpay->Redirect();
+    Hamrahpay::Redirect();
 
 ```
 
